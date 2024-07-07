@@ -1,24 +1,11 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
 
 export default function Home() {
   return (
-    <View style={styles.container}>
-        <Text style={styles.title}>
+    <View className="flex-1 justify-center items-center bg-red-500">
+        <Text className="text-white text-2xl">
             Hello React Native
         </Text>
     </View>
   )
 }
-
-const styles = StyleSheet.create({
-    container: {
-        backgroundColor: 'black',
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-    title: {
-        fontSize: 24,
-        color: 'white'
-    }
-})
